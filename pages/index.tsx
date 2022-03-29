@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Banner from "../component/Banner";
 import Menu from "../component/Menu";
+import LectureGroup from "../component/lecture/LectureGroup";
 
 const Home: NextPage = () => {
   return (
@@ -24,9 +25,7 @@ const Home: NextPage = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
       </main>
-      <div title="lectureList">
-        <h1>강의목록</h1>
-      </div>
+      <LectureGroup />
 
       <footer className={styles.footer}>
         <a
